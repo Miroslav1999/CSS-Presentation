@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" href="Problem 4. Windows Calculator.css">
+<body>
+	<div id="calcWindow">
+	<div id="calcWinCtrl">
+		<form><input type="button" id="minimizeButton"></form>
+		<form><input type="button" id="maximizeButton"></form>
+		<form><input type="button" id="exitButton"></form>
+	</div>
+	<div id="logo">
+		<img src="Calculator_Windows_7_Icon.png"><p>Calculator</p>
+	</div>
+	<div id="calcBody">
+		<div id="calcNav">
+			<form><input type="button" id="viewButton" value="View"></form>
+			<form><input type="button" id="editButton" value="Edit"></form>
+			<form><input type="button" id="helpButton" value="Help"></form>
+		</div>
+		<div id="calcDisp">
+			<textarea id="textAreaDisp">8854455</textarea>
+		</div>
+		<div id="calcTable">
+			<table id="tableBin">
+				<tr>
+					<td>0000</td>
+					<td>0000</td>
+					<td>0000</td>
+					<td>0000</td>
+					<td>0000</td>
+					<td>0000</td>
+					<td>0000</td>
+					<td>0000</td>
+				</tr>
+				<tr>
+					<td class="leftColumn">63</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="leftColumn">47</td>
+					<td></td>
+					<td></td>
+					<td class="rightColumn">32</td>	
+				</tr>
+				<tr>
+					<td>0000</td>
+					<td>0000</td>
+					<td>1000</td>
+					<td>0111</td>
+					<td>0001</td>
+					<td>1011</td>
+					<td>1011</td>
+					<td>0111</td>
+				</tr>
+				<tr>
+					<td class="leftColumn">31</td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td class="leftColumn">15</td>
+					<td></td>
+					<td></td>
+					<td class="rightColumn">0</td>	
+				</tr>
+			</table>
+		</div>
+		<div id="calcRadioOne">
+			<form>
+				<input type="radio">Hex</br >
+				<input type="radio">Dec</br >
+				<input type="radio">Oct</br >
+				<input type="radio">Bin</br >		
+			</form>
+		</div>
+		<div id="calcRadioTwo">
+			<form>
+				<input type="radio">Qword</br >
+				<input type="radio">Dword</br >
+				<input type="radio">Word</br >
+				<input type="radio">Byte</br >
+			</form>
+		</div>	
+		<div id="calcButtons">
+			<div id="row">
+				<form><input type="button" class="notActive" id="one" value="&supsup;"></form>
+				<form><input type="button" class="active" id="two" value="Mod"></form>
+				<form><input type="button" class="notActive" id="three" value="A"></form>
+				<form><input type="button" class="notActive" id="four" value="MC"></form>
+				<form><input type="button" class="notActive" id="five" value="MR"></form>
+				<form><input type="button" class="notActive" id="six" value="MS"></form>
+				<form><input type="button" class="notActive" id="seven" value="M+"></form>
+				<form><input type="button" class="notActive" id="eight" value="M-"></form>				
+			</div>
+			<div id="row">
+				<form><input type="button" class="active" id="one" value="("></form>
+				<form><input type="button" class="active" id="two" value=")"></form>
+				<form><input type="button" class="notActive" id="three" value="B"></form>
+				<form><input type="button" class="active" id="four" fonts: "bold" value="&#8592;"></form>
+				<form><input type="button" class="active" id="five" value="CE"></form>
+				<form><input type="button" class="active" id="six" value="C"></form>
+				<form><input type="button" class="active" id="seven" value="&plusmn;"></form>
+				<form><input type="button" class="notActive" id="eight" value="&Sqrt;"></form>							
+			</div>
+			<div id="row">
+				<form><input type="button" class="active" id="one" value="RoL"></form>
+				<form><input type="button" class="active" id="two" value="RoR"></form>
+				<form><input type="button" class="notActive" id="three" value="C"></form>
+				<form><input type="button" class="activeNum" id="four" value="7"></form>
+				<form><input type="button" class="activeNum" id="five" value="8"></form>
+				<form><input type="button" class="activeNum" id="six" value="9"></form>
+				<form><input type="button" class="active" id="seven" value="/"></form>
+				<form><input type="button" class="notActive" id="eight" value="%"></form>							
+			</div>
+			<div id="row">
+				<form><input type="button" class="active" id="one" value="Or"></form>
+				<form><input type="button" class="active" id="two" value="Xor"></form>
+				<form><input type="button" class="notActive" id="three" value="D"></form>
+				<form><input type="button" class="activeNum" id="four" value="4"></form>
+				<form><input type="button" class="activeNum" id="five" value="5"></form>
+				<form><input type="button" class="activeNum" id="six" value="6"></form>
+				<form><input type="button" class="active" id="seven" value="*"></form>
+				<form><input type="button" class="notActive" id="eight" value="&frac12;"></form>							
+			</div>
+			<div id="row">
+				<form><input type="button" class="active" id="one" value="Lsh"></form>
+				<form><input type="button" class="active" id="two" value="Rsh"></form>
+				<form><input type="button" class="notActive" id="three" value="E"></form>
+				<form><input type="button" class="activeNum" id="four" value="1"></form>
+				<form><input type="button" class="activeNum" id="five" value="2"></form>
+				<form><input type="button" class="activeNum" id="six" value="3"></form>
+				<form><input type="button" class="active" id="seven" value="-"></form>
+				<form><input type="button" class="active" id="eight" value="="></form>							
+			</div>
+			<div id="row">
+				<form><input type="button" class="active" id="one" value="Not"></form>
+				<form><input type="button" class="active" id="two" value="And"></form>
+				<form><input type="button" class="notActive" id="three" value="F"></form>
+				<form><input type="button" class="activeNum" id="fourNumBig" value="0"></form>
+				<!--<form><input type="button" class="active" id="five" value="0"></form> -->
+				<form><input type="button" class="notActive" id="six" value="."></form>
+				<form><input type="button" class="active" id="seven" value="+"></form>
+				<form><input type="button" class="active" id="eight" value="="></form>						
+			</div>
+		</div>
+	</div>	
+	</div>
+</body>		
+</head>	
+</html>

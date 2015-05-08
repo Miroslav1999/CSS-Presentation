@@ -1,0 +1,15 @@
+p {
+	font-family: consolas;
+	color: #0094ff;
+	font-size: 16px;
+}
+
+p :first-line {
+	font-weight: bold;
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(ITCEdscr.eot);
+	font-size: 2em;
+}
